@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Metric is the best way to rule your enterprise"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto+Condensed:wght@400&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+
+    <title>Metric</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <span><a href="index.html">Metric</a></span>
+        <nav>
+          <button sclass="material-icons">&#xe5d2;</button>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="bg__green">
+          <!-- Data container -->
+          <div class="container">
+            <!-- Hero data and metric -->
+            <div class="hero__firstView">
+              <div class="hero__description">
+                <article>
+                  <h1>Grow Your Business 10x with Metric</h1>
+                  <p>
+                    The Metric Dashboard brings all of your business insights
+                    under one roof. Revenue metrics, social, integrations -
+                    everything.
+                  </p>
+                </article>
+                <div class="hero__buttons">
+                  <a class="btn">Sign Up</a>
+                  <a class="btnTransparent">Learn More</a>
+                </div>
+              </div>
+              <div class="hero__image">
+                <img
+                  src="./assets/Metric-screenshot.png"
+                  alt="Metrics of something"
+                />
+              </div>
+              <div class="hero__background_image"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero sponsors -->
+        <div class="bg__dark_green">
+          <div class="sponsors container">
+            <p>IN THE PRESS</p>
+            <div>
+              <img
+                src="./assets/icons/logo_Fastcompany.svg"
+                alt="FastCompany"
+              />
+              <img src="./assets/icons/logo_Forbes.svg" alt="Forbes" />
+              <img src="./assets/icons/logo_techcrunch.svg" alt="Techcrunch" />
+              <img src="./assets/icons/logo_Wired.svg" alt="Wired" />
+              <img src="./assets/icons/zdnet.svg" alt="Zdnet" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="description container">
+        <div class="title">
+          <h2>Sync Across All Devices</h2>
+          <p>
+            Everything you need to make your business grow
+            <strong>super fast!</strong>
+          </p>
+        </div>
+
+        <div class="description__features">
+          <div class="desc__features_row">
+            <img src="./assets/Metric-screenshot1.png" alt="" />
+            <article>
+              <img src="./assets/icons/laptop-2-icon.svg" alt="" />
+              <h3>Web Application</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Consectetur
+                adipiscing elit.
+              </p>
+            </article>
+          </div>
+          <div class="desc__features_row">
+            <article>
+              <img src="./assets/icons/download-icon.svg" alt= />
+              <h3>Mobile App</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Consectetur
+                adipiscing elit.
+              </p>
+            </article>
+            <img src="./assets/Metric-screenshot-phone.png" alt="" />
+          </div>
+        </div>
+
+        <div class="description__moreFeatures">
+          <article>
+            <img src="./assets/icons/control-panel-icon.svg" alt= />
+            <h4>Dashboard</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </article>
+          <article>
+            <img src="./assets/icons/sitemap-7-icon.svg" alt= />
+            <h4>Custom Rules</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </article>
+          <article>
+            <img src="./assets/icons/save-9-icon.svg" alt= />
+            <h4>Presets</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </article>
+          <article>
+            <img src="./assets/icons/bar-chart-icon.svg" alt= />
+            <h4>Metrics</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </article>
+        </div>
+
+        <div class="description__latestTechs">
+          <div class="title">
+            <h2>Using the latest technologies</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <strong>Eos, modi!</strong>
+            </p>
+          </div>
+          <div class="description__latestTechs_graph">
+            <canvas id="graph"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="title">
+            <h2>Plans & Pricing</h2>
+            <p>
+              No credit card required. No risk,
+              <strong>30-day money back guarantee!</strong>
+            </p>
+          </div>
+
+          <div class="pricing__container_cards">
+            <div>
+              <h4>Starter</h4>
+              <p><strong>$15</strong> /month</p>
+              <p><strong>500</strong> Data Points</p>
+              <p><strong>1</strong> Team Member</p>
+              <hr />
+              <p><b>Email</b> Support</p>
+              <p><del>IOS and Android App</del></p>
+              <p><del>Customizable Dashboard</del></p>
+              <p><del>Metric API</del></p>
+
+              <button>Choose Plan</button>
+            </div>
+            <div>
+              <h4>Professional</h4>
+              <p><strong>$30</strong> /month</p>
+              <p><strong>2000</strong> Data Points</p>
+              <p><strong>1</strong> Team Member</p>
+              <hr />
+              <p><b>Email</b> Support</p>
+              <p><b>IOS</b> and <b>Android</b> App</p>
+              <p><del>Customizable Dashboard</del></p>
+              <p><del>Metric API</del></p>
+
+              <button>Choose Plan</button>
+            </div>
+            <div>
+              <h4>Startup</h4>
+              <p><strong>$75</strong> /month</p>
+              <p><strong>5000</strong> Data Points</p>
+              <p><strong>3</strong> Team Member</p>
+              <hr />
+              <p><b>Email</b> Support</p>
+              <p><b>IOS</b> and <b>Android</b> App</p>
+              <p><b>Customizable</b> Dashboard</p>
+              <p><del>Metric API</del></p>
+
+              <button>Choose Plan</button>
+            </div>
+            <div>
+              <h4>Business</h4>
+              <p><strong>$250</strong> /month</p>
+              <p><strong>15000</strong> Data Points</p>
+              <p><strong>10</strong> Team Member</p>
+              <hr />
+              <p><b>Email</b> Support</p>
+              <p><b>IOS</b> and <b>Android</b> App</p>
+              <p><b>Customizable</b> Dashboard</p>
+              <p>Metric <b>API</b></p>
+
+              <button>Choose Plan</button>
+            </div>
+          </div>
+
+          <p class="pricing__contactUs">
+            Need more Data Points or Team Members? Please
+            <a href="#">contact us</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="customers" class="customers container">
+        <div class="title">
+          <h2>What People Say About Us</h2>
+        </div>
+
+        <div class="customers__carousel">
+          <button onclick="previousQuote()">&#10094;</button>
+          <div class="customers__quotes_container">
+            <div class="customers__quote">
+              <p>
+                “Nulla non metus auctor fringilla. Maecenas sed diam eget risus
+                varius blandit sit amet non magna. Maecenas faucibus mollis
+                interdum.”
+              </p>
+              <div>
+                <img src="./assets/photos/bryant-square.jpg" alt="" />
+                <span><b>Bryant Chou</b></span>
+                <span>CTO at Slapper Labs</span>
+              </div>
+            </div>
+
+            <div class="customers__quote">
+              <p>
+                “Donec ullamcorper nulla non metus auctor fringilla. Maecenas
+                sed diam eget risus varius blandit sit amet non magna. Maecenas
+                faucibus mollis interdum.”
+              </p>
+              <div>
+                <img
+                  src="./assets/photos/5e4b18d10b25ed78514d7460_04f14af5199093cdd29a89eb295febf5.jpeg"
+                  alt=""
+                />
+                <span><b>Kyle Killit</b></span>
+                <span>Designer at Tiempo Labs</span>
+              </div>
+            </div>
+
+            <div class="customers__quote">
+              <p>
+                “Ullamcorper nulla non metus auctor fringilla. Maecenas sed diam
+                eget risus varius blandit sit amet non magna”
+              </p>
+              <div>
+                <img src="./assets/photos/sergie-square.jpg" alt="" />
+                <span><b>Sergie Kalashnikov</b></span>
+                <span>CEO at BentoBox</span>
+              </div>
+            </div>
+          </div>
+          <button onclick="nextQuote()">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="bg__sky_blue">
+        <div class="sponsors container">
+          <div>
+            <img src="./assets/client_logo_johnson_and_johnson.png" alt="" />
+            <img src="./assets/client_logo_tesla.png" alt="" />
+            <img src="./assets/client_logo_ouya.png" alt="" />
+            <img src="./assets/client_logo_chartboost.png" alt="" />
+            <img src="./assets/client_logo_mammoth.png" alt="" />
+            <img src="./assets/client_logo_neutrogena.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__contact">
+          <span>Metric</span>
+          <p>Sign up for our newsletter</p>
+          <form>
+            <input type="text" placeholder="Email Address" />
+            <input type="submit" value="Subscribe" />
+          </form>
+          <div>
+            <a href="#"
+              ><img src="./assets/icons/facebook-icon.svg" alt=""
+            /></a>
+            <a href="#"><img src="./assets/icons/twitter-icon.svg" alt="" /></a>
+            <a href="#"
+              ><img src="./assets/icons/linkdin-icon-white.svg" alt=""
+            /></a>
+            <a href="#"><img src="./assets/icons/mail.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer__additional_pages">
+          <div>
+            <b>COMPANY</b>
+            <div>
+              <p><a href="#features">Features</a></p>
+              <p><a href="#pricing">Pricing</a></p>
+              <p><a href="#clients">Clients</a></p>
+              <p><a href="#pricing">Pricing</a></p>
+              <p><a href="#">Sign Up</a></p>
+            </div>
+          </div>
+          <div>
+            <b>PRODUCT</b>
+            <div>
+              <p><a href="#features">Analytics</a></p>
+              <p><a href="#pricing">Businesses</a></p>
+              <p><a href="#cutomers">Testimonials</a></p>
+              <p><a href="#">Integrations</a></p>
+            </div>
+          </div>
+          <div>
+            <b>LEGAL</b>
+            <div>
+              <p><a href="#features">Privay Policy</a></p>
+              <p><a href="#pricing">Terms of Use</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copyright">
+      <p class="container">
+        Copyright 2014 Metric. All Rights Reserved. Brand logos for
+        demonstration purposes only.
+        <a href="https://www.coindesk.com/price/bitcoin">
+          Powered by CoinDesk
+        </a>
+      </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./scripts/graph.js"></script>
+    <script type="module" src="./scripts/menu.js"></script>
+    <script src="./scripts/carousel.js"></script>
+  </body>
+</html>

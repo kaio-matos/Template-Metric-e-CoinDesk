@@ -1,0 +1,641 @@
+/* 
+Topics:
+
+--> 1. Main Style
+--> 2. Hero
+--------- 2.1. Hero First View
+--------- 2.2. Hero Responsive
+--> 3. Description
+------ 3.1. Description Features 
+------ 3.2. Description More Features
+------ 3.3. Description Latest Techs
+------ 3.4. Description Responsive
+--> 4. Pricing
+------ 4.1. Pricing Container Cards
+------ 4.2. Pricing Card
+------ 4.3. Pricing Contact
+------ 4.4. Pricing Responsive
+--> 5. Customers
+------ 5.1. Customers Carousel
+------ 5.2. Customers Quotes Container
+------ 5.3. Customers Quote
+
+*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ---------------------------------- */
+/* 1. Main Style -------------------- */
+/* ---------------------------------- */
+
+main {
+  color: var(--second-color);
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ---------------------------------- */
+/* 2. Hero -------------------------- */
+/* ---------------------------------- */
+.hero {
+  color: white;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 2.1. Hero First View */
+.hero__firstView {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  position: relative;
+  gap: 3rem;
+  padding: var(--sections-paddings);
+  z-index: 1;
+}
+
+.hero__background_image {
+  position: absolute;
+  background-image: url("../assets/icons/bar-chart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.1);
+  top: 0;
+  z-index: -1;
+}
+
+.hero__description {
+  width: 100%;
+}
+
+.hero__description h1 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.171);
+}
+.hero__description p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1.7rem 0;
+}
+.hero__image {
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+.hero__buttons {
+  margin-top: 3rem;
+}
+
+.hero__buttons a:first-child {
+  margin-right: 1rem;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 2.2. Hero Responsive */
+@media screen and (max-width: 800px) {
+  .hero__firstView {
+    flex-direction: column;
+  }
+
+  .hero__description {
+    text-align: center;
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ---------------------------------- */
+/* 3. Description ------------------- */
+/* ---------------------------------- */
+
+.description {
+  padding: var(--sections-paddings);
+}
+
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 3.1. Description Features */
+
+.desc__features_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.desc__features_row > img {
+  width: 50%;
+}
+
+.desc__features_row article {
+  width: 50%;
+}
+.desc__features_row article h3 {
+  margin: 1.5rem 0;
+}
+
+.desc__features_row article > img {
+  width: 3rem;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 3.2. Description More Features */
+.description__moreFeatures {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.description__moreFeatures article {
+  padding: 0 1rem;
+}
+
+.description__moreFeatures img {
+  width: 3rem;
+}
+.description__moreFeatures h4 {
+  margin: 1rem 0;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 3.3. Description Latest Techs */
+.description__latestTechs {
+  padding: var(--sections-paddings);
+}
+
+.description__latestTechs_graph {
+  display: flex;
+  position: relative;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 3.3. Description Responsive */
+@media screen and (max-width: 800px) {
+  .description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .description__features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc__features_row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desc__features_row article,
+  .desc__features_row img {
+    width: 80%;
+  }
+
+  .desc__features_row h3 {
+    font-size: 3rem;
+  }
+  .desc__features_row p {
+    font-size: 2rem;
+  }
+
+  .desc__features_row:last-of-type {
+    margin-top: 5rem;
+  }
+
+  .desc__features_row:last-of-type > img {
+    order: -1;
+  }
+
+  /* More features */
+  .description__moreFeatures {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .description__moreFeatures article {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .description__moreFeatures {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description__moreFeatures article {
+    width: 80%;
+  }
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ---------------------------------- */
+/* 4. Pricing ----------------------- */
+/* ---------------------------------- */
+
+.pricing {
+  background-color: #dde7ed;
+  padding: var(--sections-paddings);
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 4.1. Pricing Container Cards */
+.pricing__container_cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 4.2. Pricing Card */
+.pricing__container_cards div {
+  padding: 1.5rem;
+  background-color: white;
+  width: 100%;
+}
+
+.pricing__container_cards h4 {
+  margin-bottom: 1rem;
+}
+
+.pricing__container_cards hr {
+  width: 95px;
+  margin: 1rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.pricing__container_cards p {
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+
+.pricing__container_cards strong {
+  color: var(--third-color);
+  font-size: 2rem;
+}
+
+.pricing__container_cards button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.pricing__container_cards del {
+  filter: opacity(0.4);
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 4.3. Pricing Contact */
+.pricing__contactUs {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.pricing__contactUs a {
+  position: relative;
+  color: var(--third-color);
+}
+.pricing__contactUs a:after {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--third-color);
+  opacity: 0;
+  transition: 500ms;
+}
+
+.pricing__contactUs a:hover::after {
+  opacity: 1;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 4.4. Pricing Responsive */
+@media screen and (max-width: 800px) {
+  .pricing__container_cards {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pricing__container_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing__container_cards div {
+    width: 80%;
+  }
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* ---------------------------------- */
+/* 5. Customers --------------------- */
+/* ---------------------------------- */
+.customers {
+  padding: var(--sections-paddings);
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 5.1. Customers Carousel */
+.customers__carousel {
+  display: flex;
+  width: 100%;
+}
+
+.customers__carousel button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  opacity: 0.5;
+  font-size: 3rem;
+  transition: 300ms;
+}
+
+.customers__carousel button:hover {
+  opacity: 1;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 5.2. Customers Quotes Container */
+.customers__quotes_container {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+/* 
+  
+  
+  
+  
+  
+  
+  
+  
+*/
+/*----------- 5.3. Customers Quote */
+.customers__quote {
+  flex: none;
+  text-align: center;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.customers__quote p {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-family: var(--logo-ff);
+  font-weight: 300;
+
+  margin-bottom: 1.5rem;
+}
+
+.customers__quote div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+}
+
+.customers__quote b {
+  font-weight: 500;
+}
+
+.customers__quote img {
+  border-radius: 50%;
+  width: 7rem;
+}
